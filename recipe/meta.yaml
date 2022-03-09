@@ -1,5 +1,5 @@
 {% set name = "poetry-dynamic-versioning" %}
-{% set version = "0.13.1" %}
+{% set version = "0.14.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5c0e7b22560db76812057ef95dadad662ecc63eb270145787eabe73da7c222f9
+  sha256: be5f66a866becb1d5e642ba51e01587a825fae0983022d9304927b709abd9cae
 
 build:
   number: 0
