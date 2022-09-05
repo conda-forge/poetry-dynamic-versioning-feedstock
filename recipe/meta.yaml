@@ -21,12 +21,14 @@ requirements:
   host:
     - pip
     - poetry-core >=1.0.0
-    - python >=3.6
+    - python >=3.7
   run:
     - dunamai >=1.12.0,<2.0.0
     - jinja2 >=2.11.1,<4
-    - python >=3.6
+    - python >=3.7
     - tomlkit >=0.4
+  run_constrained:
+    - poetry >=1.2.0,<2
 
 test:
   imports:
