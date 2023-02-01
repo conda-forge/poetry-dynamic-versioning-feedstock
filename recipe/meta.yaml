@@ -1,5 +1,5 @@
 {% set name = "poetry-dynamic-versioning" %}
-{% set version = "0.19.0" %}
+{% set version = "0.21.3" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a11a7eba6e7be167c55a1dddec78f52b61a1832275c95519ad119c7a89a7f821
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 2e08ca0f089e2458f9cd41f2d37f01ce3ae4e40975004dc143fbf86b793ec909
 
 build:
   number: 0
@@ -23,7 +23,8 @@ requirements:
     - poetry-core >=1.0.0
     - python >=3.7
   run:
-    - dunamai >=1.12.0,<2.0.0
+    - poetry ^1.2.0optionaltrue
+    - dunamai ^1.14.0
     - jinja2 >=2.11.1,<4
     - python >=3.7
     - tomlkit >=0.4
