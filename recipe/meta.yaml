@@ -23,8 +23,7 @@ requirements:
     - poetry-core >=1.0.0
     - python >=3.7
   run:
-    - poetry ^1.2.0optionaltrue
-    - dunamai ^1.14.0
+    - dunamai >=1.14.0,<2.0.0
     - jinja2 >=2.11.1,<4
     - python >=3.7
     - tomlkit >=0.4
