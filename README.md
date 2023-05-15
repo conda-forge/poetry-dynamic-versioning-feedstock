@@ -1,11 +1,11 @@
-About poetry-dynamic-versioning
-===============================
+About poetry-dynamic-versioning-feedstock
+=========================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/poetry-dynamic-versioning-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/mtkennerly/poetry-dynamic-versioning
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/poetry-dynamic-versioning-feedstock/blob/main/LICENSE.txt)
 
 Summary: Plugin for Poetry to enable dynamic versioning based on VCS tags
 
