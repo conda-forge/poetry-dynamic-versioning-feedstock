@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: 21584d21ca405aa7d83d23d38372e3c11da664a8742995bdd517577e8676d0e1
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - poetry-dynamic-versioning = poetry_dynamic_versioning.__main__:main
@@ -21,11 +21,11 @@ requirements:
   host:
     - pip
     - poetry-core >=1.0.0
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - dunamai >=1.21.0,<2.0.0
     - jinja2 >=2.11.1,<4
-    - python >=3.7
+    - python >={{ python_min }}
     - tomlkit >=0.4
   run_constrained:
     - poetry >=1.2.0,<2
@@ -38,6 +38,7 @@ test:
     - poetry-dynamic-versioning --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/mtkennerly/poetry-dynamic-versioning
